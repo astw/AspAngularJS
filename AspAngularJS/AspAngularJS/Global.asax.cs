@@ -10,7 +10,8 @@ using System.Web.Routing;
 
 namespace AspAngularJS
 {
-    
+    using Newtonsoft.Json.Serialization;
+
     public class Global : System.Web.HttpApplication
     {
         protected void Application_Start(object sender, EventArgs e)
@@ -75,6 +76,12 @@ namespace AspAngularJS
             configuration.Formatters.XmlFormatter.UseXmlSerializer = true;
             configuration.Formatters.JsonFormatter.MediaTypeMappings.Add(new QueryStringMapping("format", "json", "application/json"));
             configuration.Formatters.XmlFormatter.MediaTypeMappings.Add(new QueryStringMapping("format", "xml", "application/xml"));
+
+            var formatters = configuration.Formatters;  // GlobalConfiguration.Configuration.Formatters;
+            var jsonFormatter = formatters.JsonFormatter;
+            var settings = jsonFormatter.SerializerSettings;
+            settings.Formatting = Formatting.Indented;
+            settings.ContractResolver = new CamelCasePropertyNamesContractResolver();
         }
     }
 }

@@ -4,28 +4,28 @@
     <hr /> 
     <ul class="thumbnails">
         <li ng-repeat="event in events|orderBy:sortorder" class="span5">
-            <a href="#/events/{{event.Id}}">
+            <a href="#/events/{{event.id}}">
                 <div class="well hoverwell">
                     <div class="row">
                         <h2 class="span6">
-                            {{event.Name}}   
+                            {{event.name}}   
                         </h2>
                     </div>
                     <div class="row">
                         <span class="span1">Date:</span>
-                        <span>{{event.Date}}</span>
+                        <span>{{event.date}}</span>
                     </div>
                     <div class="row">
                         <span class="span1">Time:</span>
-                        <span>{{event.Time}}</span>
+                        <span>{{event.time}}</span>
                     </div>
                     <div class="row">
                         <span class="span1">Location:</span>
-                        <span>{{event.Location.Address}}</span>
+                        <span>{{event.location.address}}</span>
                     </div>
                     <div class="row">
                         <span class="span1">&nbsp;</span>
-                        <span>{{event.Location.City}}, {{event.Location.Province}}</span>
+                        <span>{{event.location.city}}, {{event.location.province}}</span>
                     </div>
                 </div>
             </a>
