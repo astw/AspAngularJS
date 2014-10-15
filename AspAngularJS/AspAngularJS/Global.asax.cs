@@ -72,7 +72,7 @@ namespace AspAngularJS
 
         private static void ConfigureFormatters(HttpConfiguration configuration)
         {
-            configuration.Formatters.JsonFormatter.SerializerSettings.DefaultValueHandling = DefaultValueHandling.Ignore;
+            configuration.Formatters.JsonFormatter.SerializerSettings.DefaultValueHandling = DefaultValueHandling.Include;
             configuration.Formatters.XmlFormatter.UseXmlSerializer = true;
             configuration.Formatters.JsonFormatter.MediaTypeMappings.Add(new QueryStringMapping("format", "json", "application/json"));
             configuration.Formatters.XmlFormatter.MediaTypeMappings.Add(new QueryStringMapping("format", "xml", "application/xml"));

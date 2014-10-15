@@ -101,11 +101,24 @@
     </Content>
     <Content Include="data\event\all.json" />
     <None Include="index.html---" />
+    <Content Include="img\glyphicons-halflings-white.png" />
+    <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="img\profile.jpg" />
     <Content Include="js\angular\app.copy.js" />
     <Content Include="js\angular\controllers\EditProfileController.js" />
     <Content Include="js\angular\controllers\EventListController.js" />
+    <Content Include="js\angular\controllers\SampleDirectiveController.js" />
+    <Content Include="js\angular\directives\collapsible.js" />
+    <Content Include="js\angular\directives\datakey.js" />
+    <Content Include="js\angular\directives\eventThumbnail.js" />
+    <Content Include="js\angular\directives\gravatar.js" />
+    <Content Include="js\angular\directives\greeting.js" />
+    <Content Include="js\angular\directives\mydirective.js" />
+    <Content Include="js\angular\directives\repeatX.js" />
+    <Content Include="js\angular\directives\upvote.js" />
     <Content Include="js\angular\services\EventData.js" />
     <Content Include="js\angular\services\EventClients.js" />
+    <Content Include="js\angular\services\GravatarUrlBuilder.js" />
     <Content Include="lesson\app.js" />
     <Content Include="lesson\github.js" />
     <Content Include="lesson\index.html" />
@@ -171,11 +184,14 @@
     <Content Include="lib\jquery.min.js" />
     <Content Include="lib\underscore-1.4.4.min.js" />
     <Content Include="templates\about.html" />
+    <Content Include="templates\directives\eventThumbnail.html" />
+    <Content Include="templates\directives\upvoting.html" />
     <Content Include="templates\EditProfile.html" />
     <Content Include="templates\EventDetails.html" />
     <Content Include="templates\EventList.html" />
     <Content Include="templates\main.html" />
     <Content Include="templates\NewEvent.html" />
+    <Content Include="templates\SampleDirective.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

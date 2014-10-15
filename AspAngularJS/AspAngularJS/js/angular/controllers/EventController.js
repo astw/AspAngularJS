@@ -4,9 +4,9 @@
 
     var app = angular.module("PhotoApp");
 
-    var eventController = function($scope, eventsClient, $routeParams) {
+    var eventController = function($scope, eventsClient, $routeParams, $route) {
         var onComplete = function(data) {
-            $scope.event = data;
+            $scope.event = data; 
         };
 
         var onError = function(error) {
@@ -21,6 +21,10 @@
 
         $scope.downVoteSession = function(session) {
             session.upVoteCount--;
+        };
+
+        $scope.reload = function() {
+            $route.reload();
         };
     };
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Registration</title>
     <link rel="stylesheet" href="css/app.css" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" /> 
 </head>
 <body>
 
@@ -16,6 +16,7 @@
                 <li><a href="#/newEvent">Create Event</a></li>
                 <li><a href="#/events">All Events</a></li>
                 <li><a href="#/editProfile">Edit Profile</a></li>
+                <li><a href="#/sampleDirective">My Directive</a></li>
                 <li><a href="#/about">about</a></li>
                 
             </ul>
@@ -39,15 +40,30 @@
     
     <script src="js/angular/services/EventData.js"></script>
     <script src="js/angular/services/EventClients.js"></script>
- 
+    <script src="js/angular/services/GravatarUrlBuilder.js"></script>
+
+    
     <script src="js/angular/controllers/MainController.js" type="text/javascript"></script> 
     <script src="js/angular/controllers/EditEventController.js" type="text/javascript"></script> 
     <script src="js/angular/controllers/EventController.js"></script> 
-    <scrip src="js/angular/controllers/EditProfileController.js" />
-    
-    <script src="js/angular/controllers/EventListController.js"></script>
 
+    <script src="js/angular/controllers/EditProfileController.js"></script>
+
+    <script src="js/angular/directives/eventThumbnail.js"></script>
+    <script src="js/angular/directives/upvote.js"></script>
+    <script src="js/angular/directives/mydirective.js"></script> 
+    <script src="js/angular/directives/datakey.js"></script>
+
+    <script src="js/angular/directives/greeting.js"></script>
+
+    <script src="js/angular/directives/collapsible.js"></script>
+    <script src="js/angular/directives/repeatX.js"></script>
+
+    <script src="js/angular/controllers/EventListController.js"></script>
+    <script src="js/angular/controllers/SampleDirectiveController.js"></script>
+    <script src="js/angular/directives/gravatar.js"></script>
     
+
     <script src="js/filters.js"></script>
     
    

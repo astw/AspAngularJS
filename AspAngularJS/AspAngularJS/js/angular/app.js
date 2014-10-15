@@ -5,7 +5,7 @@
 (function () {
     var app = angular.module('PhotoApp', ['ngResource', 'ngRoute']);
    
-   app.config(function($routeProvider) {
+   app.config(function($routeProvider, $locationProvider) {
        $routeProvider
            .when("/main",
            {
@@ -45,8 +45,16 @@
            {
                templateUrl: 'templates/EventList.html',
                controller: "EventListController"
-           });
+           })
+           .when("/sampleDirective",
+           {
+               templateUrl: 'templates/SampleDirective.html',
+               controller: "SampleDirectiveController"
+           }
+               );
         
-           $routeProvider.otherwise({ redirectTo: '/main' });
-       });  
+
+        $routeProvider.otherwise({ redirectTo: '/main' });
+ 
+   });  
 }());
