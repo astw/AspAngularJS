@@ -1,0 +1,24 @@
+
+OAuth 2.0 for google 
+
+Client ID 
+
+Client ID for web application
+
+CLIENT ID 1089632013491-1ap1gckvhagh3sjtvh705j6dag9j3ko2.apps.googleusercontent.com 
+EMAIL ADDRESS  1089632013491-1ap1gckvhagh3sjtvh705j6dag9j3ko2@developer.gserviceaccount.com  
+
+CLIENT SECRET  J_RyGmZshVR_1Tx6Yi3dUW84  
+
+REDIRECT URIS  http://localhost:61097/oauth2callback
+
+ JAVASCRIPT ORIGINS  
+
+http://localhost:61097/
+
+=============================================================
+
+API KEY AIzaSyAtuq-ak6MfH9M3zzWv_ewongNTumWO3e0 
+IPS  Any IP allowed  
+ACTIVATION DATE Oct 28, 2014, 8:08:00 AM 
+ACTIVATED BY wshuhao@gmail.com (you)

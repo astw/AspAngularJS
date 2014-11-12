@@ -51,6 +51,10 @@
                templateUrl: 'templates/SampleDirective.html',
                controller: "SampleDirectiveController"
            }
+           //.when("/GoogleLogin", {
+           //    templateUrl: "templates/GoogleLogin.htm",
+          //     controller:"GoogleLoginController"
+          // })
                );
         
 

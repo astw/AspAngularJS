@@ -10,6 +10,12 @@ using System.Web.Routing;
 
 namespace AspAngularJS
 {
+    using System.Threading;
+
+    using Google.Apis.Auth.OAuth2;
+    using Google.Apis.Drive.v2;
+    using Google.Apis.Util.Store;
+
     using Newtonsoft.Json.Serialization;
 
     public class Global : System.Web.HttpApplication
@@ -20,6 +26,28 @@ namespace AspAngularJS
 
             ConfigureApi(GlobalConfiguration.Configuration);
 
+           // GetPermisssion();
+        }
+
+
+        private void GetPermisssion()
+        {
+            UserCredential credential;
+            credential =
+                GoogleWebAuthorizationBroker.AuthorizeAsync(
+                    new ClientSecrets
+                    {
+                        ClientId = "1089632013491-1ap1gckvhagh3sjtvh705j6dag9j3ko2.apps.googleusercontent.com",
+                        ClientSecret = "J_RyGmZshVR_1Tx6Yi3dUW84"
+                    },
+                    new[]
+                        {
+                            DriveService.Scope.Drive, 
+                            DriveService.Scope.DriveFile
+                        },
+                    "wshuhao@gmail.com",
+                    CancellationToken.None,
+                    new FileDataStore("Drive.Auth.Store")).Result;
         }
 
         protected void Session_Start(object sender, EventArgs e)
